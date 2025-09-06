@@ -2,10 +2,13 @@ import { FaSearch, FaBolt } from "react-icons/fa";
 
 export default function AboutHeroSection() {
     return (
-        <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 lg:px-20 py-16 bg-gradient-to-br from-[#0d1f16] to-[#0f3d2d] text-white">
-
+        <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 lg:px-20 py-16 text-white ">
+      <div
+        id="blurred-ellipse"
+        className="absolute w-[111px] h-[1435px] right-[420px]  top-[-200px] rotate-[82deg] bg-primary blur-[111px] transform"
+      />
             {/* LEFT SIDE */}
-            <div className="max-w-xl w-full">
+            <div className="max-w-xl w-full z-10">
                 {/* Top pill */}
                 {/* <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-1 mb-6 text-sm">
           👋 Welcome to Gigleaz
@@ -20,8 +23,8 @@ export default function AboutHeroSection() {
 
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
-                    From <span className="text-[#d4af37]">IT</span> roots to a <br />global{" "}
-                    <span className="text-[#187b52]">EdTech</span> <br /> product.
+                    From <span className="text-secondary">IT</span> roots to a <br />global{" "}
+                    <span className="text-primary">EdTech</span> <br /> product.
                 </h1>
 
 
@@ -41,7 +44,7 @@ export default function AboutHeroSection() {
                         placeholder="What do you want to learn today?"
                         className="flex-grow px-3 py-3 text-gray-700 outline-none" 
                     />  
-                    <button className="bg-[#1ed760] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#17b04e] transition">
+                    <button className="bg-primary text-white font-semibold px-6 py-2 rounded-full hover:bg-primary-light transition">
                     Join Us Now →
                 </button>
                 </div>
@@ -54,7 +57,7 @@ export default function AboutHeroSection() {
             </div>
 
             {/* RIGHT SIDE IMAGE */}
-            <div className="mt-12 lg:mt-0 lg:ml-12">
+            <div className="mt-12  lg:mt-0 lg:ml-12 z-10">
                 <img
                     src="/about/aboutHeropageimg.png"
                     alt="Students learning"

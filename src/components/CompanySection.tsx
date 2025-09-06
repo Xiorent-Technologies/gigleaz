@@ -1,7 +1,7 @@
 // CompanySection.jsx
 export default function CompanySection() {
   return (
-    <section className="relative w-full px-6 sm:px-12 lg:px-20 py-12 bg-gradient-to-br from-[#0d1f16] to-[#0f3d2d]">
+    <section className="relative w-full px-6 sm:px-12 lg:max-w-7xl py-12">
       {/* Image container */}
       <div
         className="relative h-[500px] sm:h-[600px] w-full rounded-2xl overflow-hidden"

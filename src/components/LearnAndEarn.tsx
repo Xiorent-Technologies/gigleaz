@@ -2,7 +2,13 @@
 import { FaBolt } from "react-icons/fa";
 export default function LearnAndEarn() {
   return (
-    <section className="py-16 px-6 sm:px-12 lg:px-20 text-white bg-gradient-to-br from-[#0d1f16] to-[#0f3d2d]">
+    <section className="py-16 px-6 sm:px-12 max-w-7xl text-white ">
+      <div
+        id="blurred-ellipse"
+        className="absolute w-[111px] h-[1435px] right-[200px] top-[1850px] rotate-[70deg] bg-primary blur-[111px] transform"
+      />
+
+
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <img
           src="/about/fourimage.png"
@@ -12,7 +18,7 @@ export default function LearnAndEarn() {
         <div>
           <div className="inline-flex items-left bg-[#f5f5f4] rounded-full px-4 py-1 mb-4">
             <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#cfede1] mr-2">
-              <FaBolt className="text-green-600 text-xs" />
+              <FaBolt className="text-primary text-xs" />
             </div>
             <span className="text-gray-900 font-medium">Learn & Earn</span>
           </div>

@@ -7,7 +7,7 @@ import CompanySection from "../components/CompanySection";
 
 export default function About() {
   return (
-    <div>
+    <div className="relative bg-black align-center flex flex-col items-center justify-center w-full min-h-screen overflow-hidden">
       <HeroSection />
       <RiseAndPause />
       <Reinventing />

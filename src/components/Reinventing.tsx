@@ -23,7 +23,14 @@ export default function Reinventing() {
   ];
 
   return (
-    <section className="py-16 px-6 sm:px-12 lg:px-20 bg-gradient-to-br from-[#0d1f16] to-[#0f3d2d] text-white">
+    <section className="py-16 px-6 sm:px-12  max-w-7xl mx-auto text-white">
+
+    <div
+        id="blurred-ellipse"
+        className="absolute w-[111px] h-[1435px] right-[200px] top-[1150px] rotate-[82deg] bg-primary blur-[111px] transform"
+      />
+
+
       {/* Header */}
       <h2 className="text-6xl font-bold mb-4">Reinventing Gigleaz</h2>
 
@@ -38,7 +45,7 @@ export default function Reinventing() {
         {items.map((item, i) => (
           <div
             key={i}
-            className="border border-[#d5cbb5]/40 rounded-xl p-8 text-center hover:bg-white/5 transition"
+            className="border border-[#d5cbb5]/40 rounded-xl p-8 text-center bg-white/5 backdrop-blur-md"
           >
             <div className="flex justify-center mb-6 text-6xl text-[#d5cbb5]">
               <img src={item.image} alt={item.title} width={100} height={100} />
