@@ -1,81 +1,79 @@
-import Timeline from '../components/Timeline'
+import { ArrowRight, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
-const Home = () => {
+export default function HeroSection() {
   return (
-    <div className="relative min-h-screen">
-              {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#064e3b] via-[#065f46] to-[#064e3b]" />
+    <section className="relative flex flex-col items-center justify-center w-full h-[728px] px-6 bg-black shadow-lg overflow-hidden">
+      {/* Blurred Ellipse */}
+      <div className="absolute left-[80px] top-[140px] w-[226px] h-[2px] rotate-90 bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" />
+      <div className="absolute left-[135px] top-[140px] w-[119px] h-[2px]  bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" />
 
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Glow Effect - Beam like color */}
-        <div className="absolute inset-0 bg-gradient-radial from-green-300/40 via-green-400/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-200/10 to-transparent" />
+      {/* Top Badge */}
+      <div className="relative w-[356px] h-[52px] flex items-center justify-center 
+  bg-[rgba(1,1,2,0.08)] backdrop-blur-[12px] 
+  rounded-[30px] shadow-[inset_0_0_16px_#29AB87]">
 
-                  {/* Crosshair top-left */}
-          <div className="absolute top-16 left-16 w-20 h-20 border-l-2 border-t-2 border-green-300 opacity-60"></div>
-
-          {/* Crosshair bottom-right */}
-          <div className="absolute bottom-16 right-16 w-20 h-20 border-r-2 border-b-2 border-green-300 opacity-60"></div>
-
-        {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <div
-            className="w-full h-full"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(34, 197, 94, 0.15) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(34, 197, 94, 0.15) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px'
-            }}
-          ></div>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-20">
-        {/* Welcome Badge */}
-        <div className="mb-12">
-          <div className="bg-green-800 border border-green-400 rounded-full px-8 py-3 text-white text-sm font-medium inline-flex items-center shadow-lg">
-            <span className="text-green-300 mr-2">⭐</span>
+        <div className="flex items-center gap-2">
+          <Sparkles className="w-[23px] h-[23px] text-[#29AB87] -scale-x-100" />
+          <p className="text-white font-light text-[16px] leading-[24px]">
             Welcome to the Gigleaz 2.0
-          </div>
-        </div>
-
-        {/* Main Headlines */}
-        <div className="text-center mb-12">
-          <h1 className="text-6xl md:text-8xl font-bold text-white uppercase leading-none mb-8 tracking-tight">
-            STOPPED. QUESTIONED. REBUILT.
-          </h1>
-          <h2 className="text-6xl md:text-8xl font-bold uppercase leading-none tracking-tight">
-            <span className="text-white">NOW, WE'RE </span>
-            <span className="text-yellow-400">BACK</span>
-          </h2>
-        </div>
-
-        {/* Subtitle */}
-        <div className="text-center mb-12">
-          <p className="text-lg md:text-xl text-white italic underline decoration-green-400 underline-offset-4">
-            *Gigleaz 2.0 – The World's First Learn & Earn OTT
           </p>
         </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 mb-16">
-          <button className="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg">
-            Join Now →
-          </button>
-          <button className="bg-transparent border-2 border-green-400 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-green-400 hover:text-green-900 transition-colors">
-            Know more →
-          </button>
-        </div>
       </div>
 
-      {/* Timeline Footer */}
-      <Timeline />
-    </div>
-  )
-}
 
-export default Home
+      {/* Main Headline */}
+      <motion.h1
+        className="mt-12 text-center text-[72px] font-bold uppercase bg-gradient-to-b from-[#DFDDDD] to-white bg-clip-text text-transparent leading-[1.3] z-10 max-w-[1244px]"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        STOPPED. QUESTIONED. REBUILT. <br /> NOW, <span className="text-[#FFD66B]">WE’RE BACK</span>
+      </motion.h1>
+
+      {/* Subtext */}
+      <p className="mt-4 underline text-white font-light text-base">
+        “Gigleaz 2.0 – The World’s First Learn & Earn OTT”
+      </p>
+      <div id="blurred-ellipse" className="absolute w-[111px] h-[1435px]  bg-[#29AB87]  blur-[111px] transform -rotate-90" />
+
+
+      {/* CTA Buttons */}
+
+      <div className="mt-6 flex gap-4">
+
+        <button className="flex items-center gap-2 bg-[#29AB87] text-white font-medium text-base px-6 py-2 rounded-full">
+          Join Now <ArrowRight className="w-5 h-5 " />
+        </button>
+        <button className="flex items-center gap-2 border border-white text-white font-medium text-base px-6 py-2 rounded-full">
+          Know More <ArrowRight className="w-5 h-5 " />
+        </button>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="w-[1106px] absolute bottom-[110px]  h-[1px] rotate-180 bg-gradient-to-r from-[#29AB87] via-[#FFFFFF] to-[#5CB16D]" />
+
+
+      {/* <div className="absolute left-[80px] bottom-[140px] w-[226px] h-[2px] rotate-90 bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" />
+<div className="absolute left-[80px] top-[140px] w-[226px] h-[2px] rotate-90 bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" /> */}
+
+
+      <div className="absolute bottom-[70px] flex gap-6 text-white text-lg font-medium">
+
+        {[
+          "1.0",
+          "Crisis",
+          "Rebuild",
+          "Relaunch",
+          "Future"
+        ].map((item, idx) => (
+          <div key={idx} className="flex items-center gap-2">
+            <span>{item}</span>
+            <ArrowRight className="w-5 h-5" />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
