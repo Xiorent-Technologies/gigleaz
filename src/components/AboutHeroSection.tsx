@@ -1,6 +1,6 @@
 import { FaSearch, FaBolt } from "react-icons/fa";
 
-export default function HeroSection() {
+export default function AboutHeroSection() {
     return (
         <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 lg:px-20 py-16 bg-gradient-to-br from-[#0d1f16] to-[#0f3d2d] text-white">
 

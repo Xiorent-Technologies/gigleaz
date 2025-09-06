@@ -1,5 +1,5 @@
 // AboutPage.jsx
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/AboutHeroSection";
 import RiseAndPause from "../components/RiseAndPause";
 import Reinventing from "../components/Reinventing";
 import LearnAndEarn from "../components/LearnAndEarn";
