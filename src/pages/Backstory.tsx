@@ -44,10 +44,10 @@ const Backstory = () => {
         />
       </div>
 
-      <div className="relative z-10 py-20 px-12 w-full">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-16 max-w-3xl">
-            <h1 className="text-7xl font-bold mb-8 leading-tight">
+      <div className="relative z-10 py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 w-full">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8 sm:mb-12 md:mb-16 max-w-4xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
               <span className="text-white">From </span>
               <span className="text-[#29AB87]">IT</span>
               <span className="text-white">
@@ -58,34 +58,34 @@ const Backstory = () => {
               <span className="text-[#29AB87]">EdTech</span>
               <span className="text-white"> Product</span>
             </h1>
-            <p className="text-2xl text-gray-300 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed mb-8 sm:mb-10">
               The story of Gigleaz — a journey of growth, conflict, betrayal,
               and rebirth into the world's first Learn & Earn OTT.
             </p>
 
-            <div className="mt-12 flex flex-wrap gap-10 items-center">
-              <div className="text-gray-300 text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
+            <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-start sm:items-center">
+              <div className="text-gray-300 text-lg sm:text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
                 Join as learner
               </div>
-              <div className="text-gray-300 text-xl">|</div>
-              <div className="text-gray-300 text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
+              <div className="text-gray-300 text-lg sm:text-xl hidden sm:block">|</div>
+              <div className="text-gray-300 text-lg sm:text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
                 Join as Creator
               </div>
-              <div className="text-gray-300 text-xl">|</div>
-              <div className="text-gray-300 text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
+              <div className="text-gray-300 text-lg sm:text-xl hidden sm:block">|</div>
+              <div className="text-gray-300 text-lg sm:text-xl hover:text-[#29AB87] transition-colors cursor-pointer">
                 Join as Trainee
               </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-4 sm:mt-6">
               <Link
                 to="/"
-                className="inline-flex items-center bg-[#29AB87] hover:bg-green-700 text-white px-10 py-4 rounded-full text-xl font-medium transition-colors shadow-lg hover:shadow-xl"
+                className="inline-flex items-center bg-[#29AB87] hover:bg-green-700 text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-medium transition-colors shadow-lg hover:shadow-xl"
               >
                 Join Us Now
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-2"
+                  className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
