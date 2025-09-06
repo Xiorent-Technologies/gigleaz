@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
+// import { ArrowRight, Sparkles } from "lucide-react";
 
 const FlipDigit = ({ digit }: { digit: string | number }) => {
   const [currentDigit, setCurrentDigit] = useState(digit);
@@ -137,7 +137,7 @@ const Countdown = () => {
                 <FlipDigit
                   key={`${label}-${index}`}
                   digit={digit}
-                  digitKey={`${label}-${index}`}
+                  // digitKey={`${label}-${index}`}
                 />
               ))}
             </div>

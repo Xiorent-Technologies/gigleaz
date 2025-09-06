@@ -4,6 +4,8 @@ import SecondComponent from '../components/HomePageComponents/SecondComponent';
 import OurStory from '../components/HomePageComponents/OurStory';
 import RelaunchingSoon from '../components/HomePageComponents/RelaunchingSoon';
 import WhatsComing from '../components/HomePageComponents/WhatsComing';
+import Learning from '../components/HomePageComponents/Learning';
+import CTASection from '../components/HomePageComponents/CTASection';
 export default function Home() {
   return (
     <div className="relative bg-black align-center flex flex-col items-center justify-center w-full min-h-screen overflow-hidden">
@@ -12,6 +14,8 @@ export default function Home() {
       <OurStory />
       <RelaunchingSoon />
       <WhatsComing />
+      <Learning />
+      <CTASection />
     </div>
   );
 }

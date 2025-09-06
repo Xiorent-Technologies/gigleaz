@@ -1,5 +1,5 @@
-import { ArrowRight, Sparkles } from "lucide-react";
-import { motion } from "framer-motion";
+// import { ArrowRight, Sparkles } from "lucide-react";
+// import { motion } from "framer-motion";
 import IconCard from "../common/IconCard";
 export default function SecondComponent() {
     return (
