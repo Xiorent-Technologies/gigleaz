@@ -5,6 +5,7 @@ import About from './pages/About'
 import Backstory from './pages/Backstory'
 import RelaunchTimeline from './pages/RelaunchTimeline'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/backstory" element={<Backstory />} />
           <Route path="/relaunch-timeline" element={<RelaunchTimeline />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   )
