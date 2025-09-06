@@ -4,15 +4,17 @@ import Beginning from "./Beginning";
 const Backstory = () => {
   return (
     <>
-    
+    <div id="blurred-ellipse3" className="absolute w-[111px] h-[1400px] z-10 top-[-150px] rotate-[75deg] bg-[#29AB87]  blur-[111px] transform "
+    />
     <div className="min-h-screen bg-black  relative flex items-center">
       {/* Background gradient */}
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-green-950 opacity-80"></div> */}
-      <div
+      {/* <div
         id="blurred-ellipse"
         className="absolute w-[111px] h-[1435px] top-[-150px]  bg-[#29AB87]  blur-[200px]  -rotate-90"
-      />
+      /> */}
 
+    
       {/* Blurred Ellipse */}
       {/* <div className="absolute left-[80px] top-[140px] w-[226px] h-[2px] rotate-90 bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" /> */}
       {/* <div className="absolute left-[135px] top-[140px] w-[119px] h-[2px] bg-gradient-to-r from-[#090C17] via-[#29AB87] to-[#090C17]" /> */}

@@ -2,12 +2,38 @@ import TimelineSection from "../components/common/TimelineSection";
 
 const Beginning = () => {
   return (
-    <div className="min-h-screen bg-black relative">
+    <div className="min-h-screen bg-black relative overflow-hidden ">
       {/* Background gradient and blurred ellipse */}
-      <div
+      {/* <div
         className="absolute w-[111px] h-[1435px] bg-[#29AB87] blur-[200px] transform -rotate-90"
         style={{ top: "-30px", rotate: "-25deg" }}
-      />
+      /> */}
+
+    {/* <div id="blurred-ellipse" className="absolute w-[111px] h-[1435px] top-[-700px] rotate-[75deg] bg-[#29AB87]  blur-[111px] transform "
+    /> */}
+
+        <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] right-[150px] top-[-100px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+    <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] left-[150px] top-[1500px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+    <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] right-[150px] top-[2000px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+
+        <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] left-[150px] top-[2700px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+    <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] right-[150px] top-[3200px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+    <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] left-[150px] top-[4000px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
+     <div id="blurred-ellipse" className="absolute  w-[111px] h-[1435px] right-[150px] top-[4700px] rotate-[75deg] bg-[#29AB87]  blur-[111px] "
+    />
+
 
       {/* Decorative dots */}
       <div className="absolute inset-0 overflow-hidden">
