@@ -1,0 +1,54 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="handGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29AB87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#29AB87" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Hand outline -->
+  <path d="M400,500 C300,450 250,400 220,300 C210,260 215,240 230,230 C245,220 265,225 275,260 L280,200 C282,180 290,170 305,165 C320,160 335,165 340,185 L345,140 C347,120 355,110 370,105 C385,100 400,105 405,125 L410,90 C412,70 425,60 440,60 C455,60 470,70 470,90 C470,90 480,200 485,250 C490,300 520,350 550,380 C580,410 600,450 580,480 C560,510 500,550 400,500 Z" 
+        fill="url(#handGradient)" 
+        stroke="#29AB87" 
+        stroke-width="3"/>
+  
+  <!-- Network lines -->
+  <g stroke="#29AB87" stroke-width="1" opacity="0.6">
+    <line x1="300" y1="300" x2="500" y2="200" />
+    <line x1="350" y1="250" x2="550" y2="300" />
+    <line x1="400" y1="350" x2="600" y2="250" />
+    <line x1="450" y1="200" x2="350" y2="400" />
+    <line x1="500" y1="350" x2="300" y2="350" />
+  </g>
+  
+  <!-- Connection points -->
+  <g fill="#29AB87">
+    <circle cx="300" cy="300" r="4" />
+    <circle cx="500" cy="200" r="4" />
+    <circle cx="350" cy="250" r="4" />
+    <circle cx="550" cy="300" r="4" />
+    <circle cx="400" cy="350" r="4" />
+    <circle cx="600" cy="250" r="4" />
+    <circle cx="450" cy="200" r="4" />
+    <circle cx="350" cy="400" r="4" />
+    <circle cx="500" cy="350" r="4" />
+    <circle cx="300" cy="350" r="4" />
+  </g>
+  
+  <!-- Small particles -->
+  <g fill="#29AB87" opacity="0.8">
+    <circle cx="320" cy="150" r="2" />
+    <circle cx="420" cy="100" r="3" />
+    <circle cx="520" cy="150" r="2" />
+    <circle cx="620" cy="200" r="1" />
+    <circle cx="670" cy="250" r="2" />
+    <circle cx="700" cy="300" r="3" />
+    <circle cx="650" cy="350" r="2" />
+    <circle cx="600" cy="400" r="1" />
+    <circle cx="550" cy="450" r="2" />
+    <circle cx="250" cy="200" r="2" />
+    <circle cx="200" cy="250" r="1" />
+    <circle cx="150" cy="300" r="3" />
+    <circle cx="200" cy="350" r="2" />
+    <circle cx="250" cy="400" r="1" />
+  </g>
+</svg>
