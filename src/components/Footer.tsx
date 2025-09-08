@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState<number | null>(null);
 
   const comingSoonLinks = [
     { name: "Investors" },
@@ -13,7 +14,7 @@ const Footer = () => {
   // sprinkle animation variants
   const sparkleVariants = {
     initial: { opacity: 0, y: 0, scale: 0 },
-    animate: (i) => ({
+    animate: (i: number) => ({
       opacity: [0, 1, 0],
       y: [0, -20 - i * 5],
       x: [0, (i % 2 === 0 ? -1 : 1) * (10 + i * 2)],
@@ -30,10 +31,10 @@ const Footer = () => {
           {/* Left Side - Logo and Navigation */}
           <div className="flex flex-col space-y-6">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
               <img src="/logo.png" alt="Gigleaz Logo" className="w-8 h-8" />
               <span className="text-2xl font-bold text-white">Gigleaz</span>
-            </div>
+            </Link>
 
             {/* Navigation Links */}
             <div className="flex flex-wrap gap-6 text-white relative">
