@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import Beginning from "./Beginning";
+import FAQSection from "../components/FAQSection";
 
 const Backstory = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <div id="blurred-ellipse3" className="absolute w-[111px] h-[1400px] z-10 top-[-150px] rotate-[75deg] bg-[#29AB87]  blur-[111px] transform "
     />
     <div className="min-h-screen bg-black  relative flex items-center">
@@ -103,8 +104,9 @@ const Backstory = () => {
       </div>
     </div>
       <Beginning/>
+      <FAQSection />
 
-    </>
+    </div>
   );
 };
 

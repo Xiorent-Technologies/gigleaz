@@ -124,14 +124,18 @@ const LiquidCursor = () => {
     };
 
     const handleClick = (e: MouseEvent) => {
-      // Check if clicked element is a button or has button in its class/parent
+      // Check if clicked element is a button, link, or has button/link in its class/parent
       const target = e.target as HTMLElement;
-      const isButton = target.tagName === 'BUTTON' || 
-                      target.closest('button') || 
-                      target.classList.contains('btn') ||
-                      target.closest('.btn');
+      const isInteractive = target.tagName === 'BUTTON' || 
+                           target.tagName === 'A' ||
+                           target.closest('button') || 
+                           target.closest('a') ||
+                           target.classList.contains('btn') ||
+                           target.classList.contains('cursor-pointer') ||
+                           target.closest('.btn') ||
+                           target.closest('[role="button"]');
       
-      if (!isButton) {
+      if (!isInteractive) {
         // Create splash effect
         const splashCount = 12 + Math.floor(Math.random() * 8);
         const newSplashParticles = Array.from({ length: splashCount }, () =>
